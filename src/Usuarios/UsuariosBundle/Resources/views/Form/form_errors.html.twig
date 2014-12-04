@@ -1,0 +1,13 @@
+{% block form_errors %}
+    {% spaceless %}
+        {% if errors|length > 0 %}
+<hr>        
+<div class="alert">
+            {% for error in errors %}
+            <div class="alert-error">  {{ error.message }}</div>
+            {% endfor %}
+        </div>
+<hr>
+        {% endif %}
+    {% endspaceless %}
+{% endblock form_errors %}
