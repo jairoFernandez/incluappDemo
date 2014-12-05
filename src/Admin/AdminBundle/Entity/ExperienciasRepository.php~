@@ -15,7 +15,7 @@ class ExperienciasRepository extends EntityRepository
     public function findExp()
     {
         $em = $this->getEntityManager();
-        $consulta = $em->createQuery('SELECT o FROM AdminBundle:Experiencias o');
+        $consulta = $em->createQuery('SELECT o.titulo, o.contenido FROM AdminBundle:Experiencias o');
         $resultado = $consulta->getArrayResult();
         return $resultado;
     }

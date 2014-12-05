@@ -54,7 +54,7 @@
                         <li><a href="{{ path("calificacion") }}"><span class="glyphicon glyphicon-info-sign"></span> Calificación</a></li>
                         <li><a href="{{ path("comentario") }}"><span class="glyphicon glyphicon-stats"></span> Comentarios</a></li>
                         <li><a href="{{ path("contactos") }}"><span class="glyphicon glyphicon-pencil"></span> Contactos</a></li>
-                        <li><a href="{{ path("experiencia") }}"><span class="glyphicon glyphicon-pencil"></span> Experiencias</a></li>
+                        <li><a href="{{ path("experiencias") }}"><span class="glyphicon glyphicon-pencil"></span> Experiencias</a></li>
                         <li><a href="{{ path("user") }}"><span class="glyphicon glyphicon-pencil"></span> Usuarios</a></li>
                         
                         

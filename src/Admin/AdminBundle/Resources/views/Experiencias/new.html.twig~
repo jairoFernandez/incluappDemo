@@ -7,7 +7,7 @@
 
         <ul class="record_actions">
     <li>
-        <a href="{{ path('experiencia') }}">
+        <a href="{{ path('experiencias') }}">
             Back to the list
         </a>
     </li>

@@ -14,7 +14,7 @@ class DefaultController extends Controller
     }
 
  // Web services manuales		
-    public function expAction()
+    public function experienciasAction()
     {
        $em = $this->getDoctrine()->getManager();
        $entity = $em->getRepository('AdminBundle:Experiencias')->findExp();
