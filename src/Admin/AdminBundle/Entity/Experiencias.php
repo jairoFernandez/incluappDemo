@@ -8,6 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * Experiencias
  *
  * @ORM\Table()
+ * @ORM\HasLifecycleCallbacks()
  * @ORM\Entity(repositoryClass="Admin\AdminBundle\Entity\ExperienciasRepository")
  */
 class Experiencias
@@ -129,15 +130,14 @@ class Experiencias
 
     /**
      * Set fechaCreacion
-     *
+     * @ORM\PrePersist
      * @param \DateTime $fechaCreacion
      * @return Experiencias
      */
-    public function setFechaCreacion($fechaCreacion)
+    public function setFechaCreacion()
     {
-        $this->fechaCreacion = $fechaCreacion;
+        $this->fechaCreacion = new \DateTime();
 
-        return $this;
     }
 
     /**

@@ -15,10 +15,12 @@ class ExperienciasType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('fechaCreacion')
+            //->add('fechaCreacion')
             ->add('titulo')
             ->add('contenido')
-            ->add('calificacion')
+            ->add('calificacion','integer',array(
+                'attr'=>array('type'=>'range','min'=>'0','max'=>'10')
+            ))
             ->add('usuario')
             ->add('tipoExperiencia')
             ->add('estado')
