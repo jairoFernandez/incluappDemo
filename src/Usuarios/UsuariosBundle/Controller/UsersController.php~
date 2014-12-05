@@ -48,4 +48,16 @@ class UsersController extends Controller{
         $experiencias = $this->getDoctrine()->getRepository('AdminBundle:Experiencias')->findAll();
         return array('experiencias'=>$experiencias);
     }
+
+
+    // Web services manuales		
+    public function experienciasAction()
+    {
+       $em = $this->getDoctrine()->getManager();
+       $entity = $em->getRepository('AdminBundle:Experiencias')->findAll();
+       
+       $jsonp = new JsonResponse($entity);
+       //$jsonp->setCallback('myCallback');
+       return $jsonp;
+    }
 }
