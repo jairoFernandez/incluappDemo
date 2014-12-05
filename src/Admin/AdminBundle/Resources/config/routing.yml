@@ -1,6 +1,6 @@
 admin_homepage:
     path:     /
-    defaults: { _controller: AdminBundle:Default:index }
+    defaults: { _controller: UsuariosBundle:Default:entrada }
 
 AdminBundle_calificacion:
         resource: "@AdminBundle/Resources/config/routing/calificacion.yml"

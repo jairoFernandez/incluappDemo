@@ -25,4 +25,7 @@ web_convocatoriasTotal:
     path:     /consulta-total/
     defaults: { _controller: UsuariosBundle:Default:exp }  
 
-
+registro_ussd:
+    path: /registro-ussd/{tipoDocumento}/{numeroDocumento}/{ciudad}/{nombres}/{apellidos}/
+    defaults: { _controller: "UsuariosBundle:Default:registro" }
+    requirements: { _method: get }
