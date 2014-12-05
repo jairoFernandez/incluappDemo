@@ -5,6 +5,8 @@ namespace Usuarios\UsuariosBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\JsonResponse;
+use Symfony\Component\HttpFoundation\Request;
+
 
 class DefaultController extends Controller
 {
@@ -23,4 +25,6 @@ class DefaultController extends Controller
        //$jsonp->setCallback('myCallback');
        return $jsonp;
     }
+
+    
 }

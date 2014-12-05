@@ -50,7 +50,5 @@ class UsersController extends Controller{
         $experiencias = $this->getDoctrine()->getRepository('AdminBundle:Experiencias')->findExp();
         return array('experiencias'=>$experiencias);
     }
-
-
    
 }

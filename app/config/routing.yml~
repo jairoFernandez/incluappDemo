@@ -24,3 +24,7 @@ users:
 web_convocatoriasTotal:
     path:     /consulta-total/
     defaults: { _controller: UsuariosBundle:Default:exp }  
+
+web_entregaTotal:
+    path:     /entrega/
+    defaults: { _controller: UsuariosBundle:Default:final }  

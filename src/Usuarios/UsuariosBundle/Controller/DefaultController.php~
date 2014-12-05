@@ -5,6 +5,8 @@ namespace Usuarios\UsuariosBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\JsonResponse;
+use Symfony\Component\HttpFoundation\Request;
+
 
 class DefaultController extends Controller
 {
@@ -14,7 +16,7 @@ class DefaultController extends Controller
     }
 
  // Web services manuales		
-    public function experienciasAction()
+    public function expAction()
     {
        $em = $this->getDoctrine()->getManager();
        $entity = $em->getRepository('AdminBundle:Experiencias')->findExp();
@@ -22,5 +24,20 @@ class DefaultController extends Controller
        $jsonp = new JsonResponse($entity);
        //$jsonp->setCallback('myCallback');
        return $jsonp;
+    }
+
+    public function finalAction(Request $request)
+    {
+        $rootNode = new \SimpleXMLElement( "<?xml version='1.0' encoding='UTF-8' standalone='yes'?><items></items>" );
+	$entity = $em->getRepository('AdminBundle:Experiencias')->findExp();
+	while($entity as $resultados){
+		$itemNode = $rootNode->addChild('item');
+        	$itemNode->addChild( 'nombres', $entity->get );
+	}
+        
+	
+	
+        // ...
+        return new Response($rootNode->asXML());
     }
 }
