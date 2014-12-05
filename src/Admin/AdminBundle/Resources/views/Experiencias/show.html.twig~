@@ -30,12 +30,12 @@
 
         <ul class="record_actions">
     <li>
-        <a href="{{ path('experiencias') }}">
+        <a href="{{ path('experiencia') }}">
             Back to the list
         </a>
     </li>
     <li>
-        <a href="{{ path('experiencias_edit', { 'id': entity.id }) }}">
+        <a href="{{ path('experiencia_edit', { 'id': entity.id }) }}">
             Edit
         </a>
     </li>

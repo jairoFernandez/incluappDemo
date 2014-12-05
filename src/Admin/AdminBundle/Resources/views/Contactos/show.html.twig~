@@ -1,33 +1,33 @@
 {% extends '::base.html.twig' %}
 
 {% block body -%}
-    <h1>Calificacion</h1>
+    <h1>Contactos</h1>
 
-    <table class="table">
+    <table class="record_properties">
         <tbody>
             <tr>
                 <th>Id</th>
                 <td>{{ entity.id }}</td>
             </tr>
             <tr>
-                <th>Experiencia</th>
-                <td>{{ entity.experiencia }}</td>
+                <th>Fecha</th>
+                <td>{{ entity.fecha|date('Y-m-d H:i:s') }}</td>
             </tr>
             <tr>
-                <th>Calificacion</th>
-                <td>{{ entity.calificacion }}</td>
+                <th>Aceptado</th>
+                <td>{{ entity.aceptado }}</td>
             </tr>
         </tbody>
     </table>
 
         <ul class="record_actions">
     <li>
-        <a href="{{ path('calificacion') }}">
+        <a href="{{ path('contactos') }}">
             Back to the list
         </a>
     </li>
     <li>
-        <a href="{{ path('calificacion_edit', { 'id': entity.id }) }}">
+        <a href="{{ path('contactos_edit', { 'id': entity.id }) }}">
             Edit
         </a>
     </li>
