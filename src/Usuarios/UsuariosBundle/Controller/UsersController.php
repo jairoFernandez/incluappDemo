@@ -47,7 +47,7 @@ class UsersController extends Controller{
      */
     public function getExperienciasAction() 
     {
-        $experiencias = $this->getDoctrine()->getRepository('AdminBundle:Experiencias')->findAll();
+        $experiencias = $this->getDoctrine()->getRepository('AdminBundle:Experiencias')->findExp();
         return array('experiencias'=>$experiencias);
     }
 
