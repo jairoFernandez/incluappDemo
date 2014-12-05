@@ -24,7 +24,7 @@ class Calificacion
     /**
      * @var string
      *
-     * @ORM\Column(name="experiencia", type="string", length=255)
+     * @ORM\ManyToOne(targetEntity="Admin\AdminBundle\Entity\Experiencias")
      */
     private $experiencia;
 
@@ -52,7 +52,7 @@ class Calificacion
      * @param string $experiencia
      * @return Calificacion
      */
-    public function setExperiencia($experiencia)
+    public function setExperiencia(\Admin\AdminBundle\Entity\Experiencias $experiencia)
     {
         $this->experiencia = $experiencia;
 

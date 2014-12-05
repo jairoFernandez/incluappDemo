@@ -49,13 +49,13 @@
 			</div>
 		</form>
 		<ul class="nav menu">
-			<li class="active"><a href="{#{ path('admin_homepage') }#}"><span class="glyphicon glyphicon-dashboard"></span> Inicio</a></li>
-			<li><a href="{#{ path("acciones") }#}"><span class="glyphicon glyphicon-info-sign"></span> Perfil</a></li>
-                        <li><a href="{#{ path("procesos") }#}"><span class="glyphicon glyphicon-info-sign"></span> Comentarios</a></li>
-                        <li><a href="{#{ path("responsables") }#}"><span class="glyphicon glyphicon-stats"></span> Usuarios</a></li>
-                        <li><a href="{#{ path("areas") }#}"><span class="glyphicon glyphicon-pencil"></span> Ajustes</a></li>
-                       
-                        
+			<li class="active"><a href="{{ path('admin_homepage') }}"><span class="glyphicon glyphicon-dashboard"></span> Inicio</a></li>
+			<li><a href="{{ path("perfil") }}"><span class="glyphicon glyphicon-info-sign"></span> Perfil</a></li>
+                        <li><a href="{{ path("calificacion") }}"><span class="glyphicon glyphicon-info-sign"></span> Calificación</a></li>
+                        <li><a href="{{ path("comentario") }}"><span class="glyphicon glyphicon-stats"></span> Comentarios</a></li>
+                        <li><a href="{{ path("contactos") }}"><span class="glyphicon glyphicon-pencil"></span> Contactos</a></li>
+                        <li><a href="{{ path("experiencias") }}"><span class="glyphicon glyphicon-pencil"></span> Experiencias</a></li>
+                        <li><a href="{{ path("user") }}"><span class="glyphicon glyphicon-pencil"></span> Usuarios</a></li>
                         
                         
                          <li class="parent ">
@@ -64,30 +64,17 @@
 				</a>
 				<ul class="children collapse" id="sub-item-2">
 					<li>
-						<a class="" href="{#{ path("tipoaccion") }#}">
-							<span class="glyphicon glyphicon-share-alt"></span> Tipo Acción
+						<a class="" href="{{ path("estado") }}">
+							<span class="glyphicon glyphicon-share-alt"></span> Estado
 						</a>
 					</li>
 					<li>
-						<a class="" href="{#{ path("estadoaccion") }#}">
-							<span class="glyphicon glyphicon-share-alt"></span> Estado Acción
+						<a class="" href="{{ path("tipoexperiencia") }}">
+							<span class="glyphicon glyphicon-share-alt"></span> Tipo Experiencia
 						</a>
 					</li>
-					<li>
-						<a class="" href="{#{ path("origen") }#}">
-							<span class="glyphicon glyphicon-share-alt"></span> Origen
-						</a>
-					</li>
-                                        <li>
-						<a class="" href="{#{ path("estadoseguimiento") }#}">
-							<span class="glyphicon glyphicon-share-alt"></span> Estado Seguimiento
-						</a>
-					</li>
-                                        <li>
-						<a class="" href="{#{ path("plan") }#}">
-							<span class="glyphicon glyphicon-share-alt"></span> Items (Plan)
-						</a>
-					</li>
+					
+                                        
 				</ul>
 			</li>
                         

@@ -1,0 +1,30 @@
+experiencias:
+    path:     /
+    defaults: { _controller: "AdminBundle:Experiencias:index" }
+
+experiencias_show:
+    path:     /{id}/show
+    defaults: { _controller: "AdminBundle:Experiencias:show" }
+
+experiencias_new:
+    path:     /new
+    defaults: { _controller: "AdminBundle:Experiencias:new" }
+
+experiencias_create:
+    path:     /create
+    defaults: { _controller: "AdminBundle:Experiencias:create" }
+    requirements: { _method: post }
+
+experiencias_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "AdminBundle:Experiencias:edit" }
+
+experiencias_update:
+    path:     /{id}/update
+    defaults: { _controller: "AdminBundle:Experiencias:update" }
+    requirements: { _method: post|put }
+
+experiencias_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "AdminBundle:Experiencias:delete" }
+    requirements: { _method: post|delete }

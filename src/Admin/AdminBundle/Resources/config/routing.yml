@@ -5,3 +5,31 @@ admin_homepage:
 AdminBundle_calificacion:
         resource: "@AdminBundle/Resources/config/routing/calificacion.yml"
         prefix:   /calificacion
+
+AdminBundle_comentario:
+        resource: "@AdminBundle/Resources/config/routing/comentario.yml"
+        prefix:   /comentario
+
+AdminBundle_contactos:
+        resource: "@AdminBundle/Resources/config/routing/contactos.yml"
+        prefix:   /contactos
+
+AdminBundle_estado:
+        resource: "@AdminBundle/Resources/config/routing/estado.yml"
+        prefix:   /estado
+
+AdminBundle_experiencias:
+        resource: "@AdminBundle/Resources/config/routing/experiencias.yml"
+        prefix:   /experiencias
+
+AdminBundle_perfil:
+        resource: "@AdminBundle/Resources/config/routing/perfil.yml"
+        prefix:   /perfil
+
+AdminBundle_tipoexperiencia:
+        resource: "@AdminBundle/Resources/config/routing/tipoexperiencia.yml"
+        prefix:   /tipoexperiencia
+
+UsuariosBundle_user:
+        resource: "@UsuariosBundle/Resources/config/routing/user.yml"
+        prefix:   /user

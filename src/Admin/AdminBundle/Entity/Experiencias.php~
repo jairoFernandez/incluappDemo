@@ -87,7 +87,7 @@ class Experiencias
      * @param string $usuario
      * @return Experiencias
      */
-    public function setUsuario($usuario)
+    public function setUsuario(\Usuarios\UsuariosBundle\Entity\User $usuario)
     {
         $this->usuario = $usuario;
 

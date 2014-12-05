@@ -1,0 +1,30 @@
+tipoexperiencia:
+    path:     /
+    defaults: { _controller: "AdminBundle:TipoExperiencia:index" }
+
+tipoexperiencia_show:
+    path:     /{id}/show
+    defaults: { _controller: "AdminBundle:TipoExperiencia:show" }
+
+tipoexperiencia_new:
+    path:     /new
+    defaults: { _controller: "AdminBundle:TipoExperiencia:new" }
+
+tipoexperiencia_create:
+    path:     /create
+    defaults: { _controller: "AdminBundle:TipoExperiencia:create" }
+    requirements: { _method: post }
+
+tipoexperiencia_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "AdminBundle:TipoExperiencia:edit" }
+
+tipoexperiencia_update:
+    path:     /{id}/update
+    defaults: { _controller: "AdminBundle:TipoExperiencia:update" }
+    requirements: { _method: post|put }
+
+tipoexperiencia_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "AdminBundle:TipoExperiencia:delete" }
+    requirements: { _method: post|delete }

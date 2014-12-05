@@ -24,7 +24,7 @@ class Calificacion
     /**
      * @var string
      *
-     * @ORM\Column(name="experiencia", type="string", length=255)
+     * @ORM\ManyToOne(targetEntity="Admin\AdminBundle\Entity\Experiencias")
      */
     private $experiencia;
 

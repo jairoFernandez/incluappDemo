@@ -1,0 +1,30 @@
+contactos:
+    path:     /
+    defaults: { _controller: "AdminBundle:Contactos:index" }
+
+contactos_show:
+    path:     /{id}/show
+    defaults: { _controller: "AdminBundle:Contactos:show" }
+
+contactos_new:
+    path:     /new
+    defaults: { _controller: "AdminBundle:Contactos:new" }
+
+contactos_create:
+    path:     /create
+    defaults: { _controller: "AdminBundle:Contactos:create" }
+    requirements: { _method: post }
+
+contactos_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "AdminBundle:Contactos:edit" }
+
+contactos_update:
+    path:     /{id}/update
+    defaults: { _controller: "AdminBundle:Contactos:update" }
+    requirements: { _method: post|put }
+
+contactos_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "AdminBundle:Contactos:delete" }
+    requirements: { _method: post|delete }

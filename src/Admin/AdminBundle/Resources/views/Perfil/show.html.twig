@@ -1,0 +1,52 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>Perfil</h1>
+
+    <table class="record_properties">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ entity.id }}</td>
+            </tr>
+            <tr>
+                <th>Tipodocumento</th>
+                <td>{{ entity.tipoDocumento }}</td>
+            </tr>
+            <tr>
+                <th>Numerodocumento</th>
+                <td>{{ entity.numeroDocumento }}</td>
+            </tr>
+            <tr>
+                <th>Ciudad</th>
+                <td>{{ entity.ciudad }}</td>
+            </tr>
+            <tr>
+                <th>Nombres</th>
+                <td>{{ entity.nombres }}</td>
+            </tr>
+            <tr>
+                <th>Apellidos</th>
+                <td>{{ entity.apellidos }}</td>
+            </tr>
+            <tr>
+                <th>Fechanacimiento</th>
+                <td>{{ entity.fechaNacimiento|date('Y-m-d H:i:s') }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('perfil') }}">
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('perfil_edit', { 'id': entity.id }) }}">
+            Edit
+        </a>
+    </li>
+    <li>{{ form(delete_form) }}</li>
+</ul>
+{% endblock %}
