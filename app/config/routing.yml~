@@ -22,5 +22,5 @@ users:
     resource:  Usuarios\UsuariosBundle\Controller\UsersController
 
 web_convocatoriasTotal:
-    path:     /experienciastotal
-    defaults: { _controller: AdminBundle:Default:experiencias }  
+    path:     /experiencias-total
+    defaults: { _controller: UsuariosBundle:Users:experiencias }  
