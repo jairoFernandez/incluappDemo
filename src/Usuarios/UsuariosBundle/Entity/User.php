@@ -18,6 +18,7 @@ class User extends BaseUser implements ParticipantInterface
      */
     protected $id;
 
+
     public function __construct()
     {
         parent::__construct();

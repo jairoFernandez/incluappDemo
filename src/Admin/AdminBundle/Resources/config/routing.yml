@@ -1,3 +1,7 @@
 admin_homepage:
-    path:     /hello/{name}
+    path:     /
     defaults: { _controller: AdminBundle:Default:index }
+
+AdminBundle_calificacion:
+        resource: "@AdminBundle/Resources/config/routing/calificacion.yml"
+        prefix:   /calificacion
